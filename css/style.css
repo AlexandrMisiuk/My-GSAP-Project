@@ -1,0 +1,542 @@
+.benefits-content .benefits-description .description-item:last-of-type, .benefits-content .benefits-description {
+  height: 100%;
+}
+
+#for-whom .for-whom-bg, #characteristics .characteristics-bg, #benefits .benefits-bg, header .header-bg {
+  width: 100%;
+  height: 100%;
+}
+
+footer, #for-whom .for-whom-content, .scooter-characteristics .scooter-characteristics-item, .description-item, .benefits-content, .header-content, .container, .wrap, .additional-nav {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.scooter-characteristics, .color-selector, .benefits-content .benefits-description, .main-nav .main-nav-items, .main-nav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.description-item .description-title, .section-title, .header-content .main-heading, .main-nav .main-nav-items {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-stretch: expanded;
+}
+
+#for-whom .for-whom-content p, .description-item .description-list, .description-item p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+#for-whom .for-whom-img img, #characteristics .characteristics-video img, #benefits .benefits-video img, header .header-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.benefits-content .benefits-description .description-item:last-of-type .benefits-description-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#for-whom .for-whom-img, #characteristics .characteristics-video, #benefits .benefits-video, header .header-video {
+  position: absolute;
+  z-index: -100;
+}
+
+#for-whom .for-whom-bg, #characteristics .characteristics-bg, #benefits .benefits-bg, header .header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+#characteristics .characteristics-bg, header .header-bg {
+  background-image: url(../img/rizor-bg1.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+#benefits .benefits-bg {
+  background-image: url(../img/rizor-bg2.png);
+  background-repeat: no-repeat;
+  background-position: 88% 0%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0s;
+}
+
+.main-heading .hover-rotate1 {
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.main-heading .hover-rotate2 {
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.main-heading .hover-rotate3 {
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.additional-nav {
+  margin-right: 5.2083333333vw;
+  margin-top: 8.537886873vh;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .additional-nav {
+    margin-right: 2%;
+  }
+}
+.additional-nav .vertical-line {
+  height: 34.6851654216vh;
+  border-left: 1px solid #f0efef;
+}
+.additional-nav .vertical-line:last-of-type {
+  order: 100;
+  margin-top: 20px;
+}
+.additional-nav .additional-nav-selector {
+  display: block;
+  margin-top: 20px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #f0efef;
+}
+.additional-nav .active {
+  border: 2px solid #f0efef;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+}
+
+.container {
+  width: 100%;
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.8vw;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 1000px;
+    padding: 0 2vw;
+  }
+}
+
+header {
+  position: relative;
+  padding-bottom: 9.2849519744vh;
+}
+@media screen and (max-width: 991px) {
+  header {
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .header-bg {
+    display: none;
+  }
+}
+header .header-video {
+  height: 80vh;
+  width: 56.0416666667vw;
+  right: 0;
+  top: 10.7vh;
+}
+@media screen and (max-width: 1199px) {
+  header .header-video {
+    top: 20vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .header-video {
+    position: static;
+    width: 100vw;
+    height: 70vh;
+  }
+}
+
+.main-nav {
+  align-items: center;
+  height: 10.7vh;
+  min-height: 100px;
+}
+.main-nav .main-nav-items {
+  align-items: center;
+  font-size: 0.95em;
+  margin-left: auto;
+  margin-right: 16.5%;
+}
+@media screen and (max-width: 991px) {
+  .main-nav .main-nav-items {
+    margin-left: 10%;
+  }
+}
+.main-nav .main-nav-items li {
+  padding: 0 10%;
+  position: relative;
+}
+.main-nav .main-nav-items li a {
+  color: #000000;
+}
+.main-nav .main-nav-items li::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-bottom: 1px solid #3a30f8;
+  visibility: hidden;
+  transition: all 0.1s ease-in-out 0s;
+}
+.main-nav .main-nav-items li:hover::after {
+  visibility: visible;
+}
+
+.header-content {
+  height: 80vh;
+  min-height: 700px;
+  justify-content: flex-end;
+  padding-bottom: 7.4%;
+}
+@media screen and (max-width: 991px) {
+  .header-content {
+    min-height: 500px;
+  }
+}
+.header-content .main-heading {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 4.7rem;
+  margin-bottom: 2%;
+  position: relative;
+}
+.header-content .main-heading::before {
+  content: url(../img/header-watch-video.png);
+  position: absolute;
+  top: -40%;
+  left: 33%;
+  transition: all 0.1s ease-in-out 0.05s;
+}
+@media screen and (max-width: 991px) {
+  .header-content .main-heading::before {
+    display: none;
+  }
+}
+.header-content .main-heading:hover::before {
+  transform: scale(1.02);
+}
+.header-content .section-title {
+  margin-bottom: 2.85%;
+}
+.header-content .arrow-down {
+  margin-left: 2.5%;
+}
+
+.section-title {
+  font-size: 1.38rem;
+}
+
+#benefits {
+  padding-top: 10vh;
+  position: relative;
+}
+@media screen and (max-width: 991px) {
+  #benefits {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#benefits .benefits-video {
+  height: 80vh;
+  width: 38.8020833333vw;
+  left: 0;
+  top: 10vh;
+}
+@media screen and (max-width: 991px) {
+  #benefits .benefits-video {
+    position: static;
+    width: 100vw;
+    height: 70vh;
+  }
+}
+
+.benefits-content {
+  height: 107vh;
+  min-height: 825px;
+  margin-left: 40%;
+}
+@media screen and (max-width: 991px) {
+  .benefits-content {
+    margin-left: 0;
+    justify-content: space-evenly;
+  }
+}
+.benefits-content .section-title {
+  color: #3a30f8;
+  margin-top: 13%;
+}
+@media screen and (max-width: 991px) {
+  .benefits-content .section-title {
+    margin-top: 2%;
+    align-self: center;
+  }
+}
+.benefits-content .benefits-description .description-item:first-of-type {
+  margin-top: 10%;
+  flex-basis: 43%;
+}
+.benefits-content .benefits-description .description-item:last-of-type {
+  flex-basis: 57%;
+  padding-top: 47%;
+}
+@media screen and (max-width: 991px) {
+  .benefits-content .benefits-description .description-item:last-of-type {
+    padding-top: 10%;
+  }
+}
+.benefits-content .benefits-description .description-item:last-of-type .description-title {
+  padding-left: 29%;
+  position: relative;
+}
+.benefits-content .benefits-description .description-item:last-of-type .description-title::before {
+  content: url(../img/scooter-pointer.png);
+  position: absolute;
+  top: 50%;
+  left: 16%;
+}
+.benefits-content .benefits-description .description-item:last-of-type p {
+  padding-left: 28%;
+  padding-right: 10%;
+}
+.benefits-content .benefits-description .description-item:last-of-type .color-selector {
+  margin-top: 12%;
+  margin-bottom: 5%;
+}
+.benefits-content .benefits-description .description-item:last-of-type .color-selector .color-item1 {
+  background-color: #e2e837;
+}
+.benefits-content .benefits-description .description-item:last-of-type .color-selector .color-item2 {
+  background-color: #00b6f1;
+}
+.benefits-content .benefits-description .description-item:last-of-type .color-selector .color-item3 {
+  background-color: #e23232;
+}
+.benefits-content .benefits-description .description-item:last-of-type .color-selector .color-item4 {
+  background-color: #f0efef;
+}
+.benefits-content .benefits-description .description-item:last-of-type .color-selector .color-item5 {
+  background-color: #000000;
+}
+.benefits-content .benefits-description .description-item:last-of-type .benefits-description-item-img {
+  width: 92.5%;
+  height: 63.829787234%;
+  align-self: center;
+}
+.description-item .description-title {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 2.5rem;
+}
+.description-item p {
+  margin-top: 1.5rem;
+}
+.description-item .description-list {
+  list-style: url(../img/list-img.png);
+  margin-top: 1.2rem;
+  padding-left: 2rem;
+}
+.description-item .description-list li {
+  margin-bottom: 1.1rem;
+}
+
+.color-selector {
+  justify-content: flex-end;
+}
+.color-selector div {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 8.7%;
+}
+.color-selector div:hover {
+  cursor: pointer;
+}
+
+#characteristics {
+  padding-top: 24.5464247599vh;
+  height: 112.0597652081vh;
+  min-height: 850px;
+  position: relative;
+}
+@media screen and (max-width: 991px) {
+  #characteristics {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+#characteristics .characteristics-video {
+  height: 80vh;
+  width: 55.78125vw;
+  right: 0;
+  top: 24.5464247599vh;
+}
+@media screen and (max-width: 1199px) {
+  #characteristics .characteristics-video {
+    top: 35vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  #characteristics .characteristics-video {
+    position: static;
+    width: 100vw;
+    height: 70vh;
+  }
+}
+#characteristics .description-item {
+  margin-top: 5%;
+  width: 35%;
+}
+@media screen and (max-width: 991px) {
+  #characteristics .description-item {
+    margin-top: 0;
+    width: 70%;
+    align-self: center;
+  }
+}
+#characteristics .description-item .scooter-characteristics {
+  margin-top: 11%;
+}
+#characteristics .description-item .description-title {
+  position: relative;
+}
+#characteristics .description-item .description-title::before {
+  content: url(../img/characteristics-watch-video.png);
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transition: all 0.1s ease-in-out 0.05s;
+}
+@media screen and (max-width: 1366px) {
+  #characteristics .description-item .description-title::before {
+    content: url(../img/characteristics-watch-video2.png);
+  }
+}
+@media screen and (max-width: 991px) {
+  #characteristics .description-item .description-title::before {
+    display: none;
+  }
+}
+#characteristics .description-item .description-title:hover::before {
+  transform: scale(1.02);
+}
+
+.scooter-characteristics {
+  justify-content: flex-start;
+}
+@media screen and (max-width: 991px) {
+  .scooter-characteristics {
+    margin-bottom: 5vh;
+  }
+}
+.scooter-characteristics .scooter-characteristics-item {
+  justify-content: space-between;
+}
+.scooter-characteristics .scooter-characteristics-item p:first-of-type {
+  font-family: "Rubik Mono One", sans-serif;
+  color: #3a30f8;
+  font-size: 3.6rem;
+}
+.scooter-characteristics .scooter-characteristics-item p:first-of-type span {
+  font-size: 1.5rem;
+}
+.scooter-characteristics .scooter-characteristics-item:first-of-type {
+  flex-basis: 60%;
+}
+
+#for-whom {
+  position: relative;
+  margin-top: 8.537886873vh;
+  height: 84.3116328709vh;
+  min-height: 550px;
+}
+#for-whom .for-whom-content {
+  height: 50.6937033084vh;
+  min-height: 400px;
+  width: 30%;
+  margin-top: 7%;
+  justify-content: space-between;
+  color: #ffffff;
+}
+@media screen and (max-width: 991px) {
+  #for-whom .for-whom-content {
+    width: 45%;
+    min-height: 300px;
+    margin-top: 20%;
+  }
+}
+#for-whom .for-whom-img {
+  height: 82.6040554963vh;
+  width: 61.9270833333vw;
+  right: 0;
+  top: -7vh;
+}
+@media screen and (max-width: 991px) {
+  #for-whom .for-whom-img {
+    width: 50vw;
+    height: 45vh;
+    top: 20vh;
+  }
+}
+#for-whom .for-whom-bg {
+  background-color: #3a30f8;
+  overflow: hidden;
+}
+#for-whom .for-whom-bg img {
+  opacity: 0.05;
+}
+
+.button {
+  display: block;
+  width: 16.5rem;
+  height: 3rem;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 3rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3a30f8;
+  border-radius: 2rem 2rem 2rem 2rem;
+  box-shadow: 0px 2px 5px #00000066;
+  transition: all 0.1s ease-in-out 0.05s;
+}
+.button:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  flex-basis: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #292929;
+  color: #f0efef;
+}
